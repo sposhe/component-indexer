@@ -1,13 +1,13 @@
 const fs   = require('fs')
 const path = require('path')
 
-const types = {
+const presets = {
   pug:  { prefix: 'include ', suffix: '',        extension: false },
   scss: { prefix: '@use "',   suffix: '" as *;', extension: false },
 }
 
 function transform(files, type, options) {
-  let { prefix, suffix, extension } = Object.assign(options, types[type])
+  let { prefix, suffix, extension } = Object.assign(options, presets[type])
   return files
     .map(val => prefix + (extension ? val : val.split('.').shift()) + suffix)
     .join('\n')
