@@ -1,7 +1,7 @@
 {
   "name": "component-indexer",
   "version": "1.0.0",
-  "description": "",
+  "description": "reates an _index file in a specified directory that references all of the files in that directory.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/sposhe/component-indexer.git"
   },
-  "author": "",
+  "keywords": [
+    "indexer",
+    "partials",
+    "sass",
+    "pug",
+    "scss"
+  ],
+  "author": "Sean O'Shea",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sposhe/component-indexer/issues"
