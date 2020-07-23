@@ -48,7 +48,7 @@ If the `filetype` matches one of the presets, the values of `prefix`, `suffix`, 
 
 ```js
 presets: {
-  pug:  { prefix: 'include ', suffix: '',        extension: false },
-  scss: { prefix: '@use "',   suffix: '" as *;', extension: false },
+  pug:  { prefix: `include `,  suffix: ``,   extension: false },
+  scss: { prefix: `@import '`, suffix: `';`, extension: false },
 }
 ```

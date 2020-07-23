@@ -2,8 +2,8 @@ const fs   = require('fs')
 const path = require('path')
 
 const presets = {
-  pug:  { prefix: 'include ', suffix: '',        extension: false },
-  scss: { prefix: '@use "',   suffix: '" as *;', extension: false },
+  pug:  { prefix: `include `,  suffix: ``,   extension: false },
+  scss: { prefix: `@import '`, suffix: `';`, extension: false },
 }
 
 function transform(files, type, options) {
