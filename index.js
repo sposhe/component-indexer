@@ -20,7 +20,7 @@ module.exports = function(directory, type, options = {}) {
     if (err) {
       return console.log('Unable to index directory: ' + err)
     } else {
-      fs.writeFileSync(indexPath, transform(files.filter(file => file !== `_index.${type}`), type, options))
+      fs.writeFileSync(indexPath, transform(files.filter(file => (file !== `_index.${type}`) && (file[0] !== '%')), type, options))
     }
   })
 }

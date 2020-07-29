@@ -1,6 +1,6 @@
 {
   "name": "component-indexer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reates an _index file in a specified directory that references all of the files in that directory.",
   "main": "index.js",
   "scripts": {
